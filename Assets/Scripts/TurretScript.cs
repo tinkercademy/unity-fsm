@@ -5,5 +5,6 @@ using UnityEngine;
 public class TurretScript : MonoBehaviour
 {
     public Transform turretHinge;
+    public Transform target;
 
 }
