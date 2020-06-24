@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TrackState : BaseState
 {
+    protected float hingeTargetAngle;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -23,6 +24,8 @@ public class TrackState : BaseState
 
         float step = Time.deltaTime * 100f;
         turretScript.turretHinge.rotation = Quaternion.RotateTowards(turretScript.turretHinge.rotation, targetDirection, step);
+
+        hingeTargetAngle = Quaternion.Angle(turretScript.turretHinge.rotation, targetDirection);
        
     }
 

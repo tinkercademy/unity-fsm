@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &92132511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 275199067859749076, guid: aa5ce140b7509ea4fae571514c8c795c,
+    type: 3}
+  m_PrefabInstance: {fileID: 782288391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &284663045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2110394619104255289, guid: c58254f0a63f72b4ab95599786361db5,
@@ -408,6 +414,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretHinge: {fileID: 782288393}
   target: {fileID: 284663045}
+  bulletSpawn: {fileID: 92132511}
+  bulletPrefab: {fileID: 1627521441993660, guid: c23c5b05d0be27841b5c6e29ba016535,
+    type: 3}
 --- !u!95 &782288395
 Animator:
   serializedVersion: 3
